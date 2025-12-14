@@ -163,7 +163,7 @@ const TransitionSection = () => (
 );
 
 const ProcessSection = () => (
-    <section id="process" className="py-16 md:py-32 bg-white overflow-hidden">
+    <section id="process" className="py-16 md:py-32 bg-white overflow-hidden scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-32">
                 <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-100 text-xs font-bold tracking-widest uppercase mb-6 text-emerald-800">How it works</span>
@@ -261,7 +261,7 @@ const ProductCard = ({ product, onAddToCart, index = 0 }) => (
 );
 
 const ProductShowcase = ({ onAddToCart }) => (
-    <section id="products" className="py-16 md:py-32 bg-[#F5F5F7]">
+    <section id="products" className="py-16 md:py-32 bg-[#F5F5F7] scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-20">
                 <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-gray-900">Our Collection.</h2>
@@ -278,7 +278,7 @@ const ProductShowcase = ({ onAddToCart }) => (
 );
 
 const UsageInspiration = () => (
-    <section id="usage" className="py-16 md:py-32 bg-[#F5F5F7]">
+    <section id="usage" className="py-16 md:py-32 bg-[#F5F5F7] scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
                 <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-gray-900">Expert performance. <br className="hidden md:block" /> In every dish.</h2>
@@ -361,7 +361,7 @@ const SafetyAssurance = () => (
 );
 
 const Testimonials = () => (
-    <section id="reviews" className="py-24 bg-white">
+    <section id="reviews" className="py-24 bg-white scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-semibold text-center mb-16 text-gray-900">Families who switched never went back.</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

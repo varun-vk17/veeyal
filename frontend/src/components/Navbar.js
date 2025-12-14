@@ -26,9 +26,9 @@ const Navbar = ({ cartCount, onOpenCart }) => {
                             </Link>
                         </div>
                         <div className="hidden md:flex space-x-8 items-center">
-                            <Link to="/#products" className="text-sm font-medium text-gray-500 hover:text-black transition-colors">Products</Link>
-                            <Link to="/#process" className="text-sm font-medium text-gray-500 hover:text-black transition-colors">Our Process</Link>
-                            <Link to="/#usage" className="text-sm font-medium text-gray-500 hover:text-black transition-colors">Usage</Link>
+                            <button onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })} className="text-sm font-medium text-gray-500 hover:text-black transition-colors">Products</button>
+                            <button onClick={() => document.getElementById('process')?.scrollIntoView({ behavior: 'smooth' })} className="text-sm font-medium text-gray-500 hover:text-black transition-colors">Our Process</button>
+                            <button onClick={() => document.getElementById('usage')?.scrollIntoView({ behavior: 'smooth' })} className="text-sm font-medium text-gray-500 hover:text-black transition-colors">Usage</button>
                             <Button variant="ghost" size="icon" className="relative" onClick={onOpenCart}>
                                 <ShoppingBag className="h-5 w-5" />
                                 {cartCount > 0 && (
