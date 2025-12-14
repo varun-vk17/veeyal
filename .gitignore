@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment Variables (Secrets)
+.env
+backend/.env
+.DS_Store
+
+# Build artifacts
+dist/
+build/
+coverage/
