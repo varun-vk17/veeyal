@@ -320,7 +320,7 @@ const UsageInspiration = () => (
     </section>
 );
 
-const SafetyAssurance = () => (
+const TrustStrip = () => (
     <section className="py-12 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-stone-50 rounded-[3rem] p-8 md:p-12 text-center relative overflow-hidden">
@@ -330,6 +330,38 @@ const SafetyAssurance = () => (
                             "No chemical refining",
                             "Cold-pressed in small batches",
                             "Trusted by families in Tamil Nadu"
+                        ].map((text, i) => (
+                            <span key={i} className="flex items-center justify-center gap-3 text-base font-semibold text-gray-900">
+                                <div className="h-6 w-6 rounded-full bg-emerald-100 flex items-center justify-center">
+                                    <Check className="h-3.5 w-3.5 text-emerald-700" strokeWidth={3} />
+                                </div>
+                                {text}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
+const SafetySection = () => (
+    <section className="py-24 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-stone-50 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+                <div className="relative z-10 max-w-2xl mx-auto">
+                    <div className="inline-flex items-center justify-center p-5 bg-white rounded-full mb-10 shadow-sm">
+                        <ShieldCheck className="h-10 w-10 text-emerald-600" strokeWidth={1.5} />
+                    </div>
+                    <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-6 text-gray-900">Safety you can trust.</h2>
+                    <p className="text-xl text-gray-500 font-medium mb-12 leading-relaxed">
+                        We use no heat or chemicals. Naturally filtered for purity. Safe for your daily cooking.
+                    </p>
+                    <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-12">
+                        {[
+                            "No Preservatives",
+                            "No Artificial Additives",
+                            "Lab Tested"
                         ].map((text, i) => (
                             <span key={i} className="flex items-center justify-center gap-3 text-base font-semibold text-gray-900">
                                 <div className="h-6 w-6 rounded-full bg-emerald-100 flex items-center justify-center">
@@ -415,9 +447,10 @@ const HomePage = ({ onAddToCart }) => {
             </Helmet>
 
             <Hero />
-            <SafetyAssurance />
+            <TrustStrip />
             <TransitionSection />
             <ProcessSection />
+            <SafetySection />
             <Testimonials />
             <ProductShowcase onAddToCart={onAddToCart} />
             <UsageInspiration />
