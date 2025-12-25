@@ -74,10 +74,10 @@ const FAQS = [
 ];
 
 const PROCESS_STEPS = [
-    { title: "Carefully Sourced", desc: "Premium seeds from organic certified farmers.", image: "/step1.jpeg" },
-    { title: "Wood Pressed", desc: "Crushed at slow speeds to avoid heat buildup.", image: "/step2.jpeg" },
-    { title: "Natural Filtration", desc: "Allowed to settle naturally. No chemical filtering.", image: "/step3.jpeg" },
-    { title: "Freshly Packed", desc: "Bottled in hygiene-controlled batches.", image: "/step4.jpeg" }
+    { title: "Better raw ingredients", desc: "Sourced from trusted farmers to ensure clean, high-quality seeds.", image: "/step1.jpeg" },
+    { title: "Easier digestion", desc: "Slow cold-pressing preserves nutrients and natural taste.", image: "/step2.jpeg" },
+    { title: "Nothing harmful added", desc: "Naturally settled and filtered without chemicals.", image: "/step3.jpeg" },
+    { title: "Fresh for daily use", desc: "Packed in small batches to maintain purity.", image: "/step4.jpeg" }
 ];
 
 const Hero = () => (
