@@ -15,7 +15,11 @@ import {
     Clock,
     ArrowRight,
     AlertTriangle,
-    FlaskConical
+    FlaskConical,
+    ShoppingBag,
+    MessageCircle,
+    CreditCard,
+    Truck
 } from 'lucide-react';
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
@@ -74,10 +78,10 @@ const FAQS = [
 ];
 
 const PROCESS_STEPS = [
-    { title: "Choose your oil", desc: "", image: "/step1.jpeg" },
-    { title: "Order on WhatsApp", desc: "", image: "/step2.jpeg" },
-    { title: "Confirm & pay", desc: "", image: "/step3.jpeg" },
-    { title: "Delivered to your home", desc: "", image: "/step4.jpeg" }
+    { title: "Better raw ingredients", desc: "Sourced from trusted farmers to ensure clean, high-quality seeds.", image: "/step1.jpeg" },
+    { title: "Easier digestion", desc: "Slow cold-pressing preserves nutrients and natural taste.", image: "/step2.jpeg" },
+    { title: "Nothing harmful added", desc: "Naturally settled and filtered without chemicals.", image: "/step3.jpeg" },
+    { title: "Fresh for daily use", desc: "Packed in small batches to maintain purity.", image: "/step4.jpeg" }
 ];
 
 const Hero = () => (
@@ -160,7 +164,8 @@ const ProcessSection = () => (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-32">
                 <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-100 text-xs font-bold tracking-widest uppercase mb-6 text-emerald-800">How it works</span>
-                <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-gray-900">Simple Ordering Process.</h2>
+                <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-gray-900">From farm to bottle.</h2>
+                <p className="text-xl text-gray-500 font-medium max-w-2xl mx-auto">A transparent journey of purity, ensuring nothing is added and nothing is removed.</p>
             </div>
 
             <div className="relative">
@@ -269,49 +274,45 @@ const ProductShowcase = ({ onAddToCart }) => (
     </section>
 );
 
-const UsageInspiration = () => (
-    <section id="usage" className="py-16 md:py-32 bg-[#F5F5F7] scroll-mt-24">
+const OrderingSteps = () => (
+    <section id="how-to-order" className="py-16 md:py-32 bg-[#F5F5F7] scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
-                <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-gray-900">Expert performance. <br className="hidden md:block" /> In every dish.</h2>
-                <p className="text-xl text-gray-500 font-medium max-w-2xl mx-auto">From high-heat frying to delicate tempering, traditional oils do it better.</p>
+                <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-gray-900">How it works</h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 {[
                     {
-                        title: "Everyday Cooking",
-                        desc: "The perfect healthy base for your daily dals, subzis, and curries.",
-                        icon: ChefHat,
+                        title: "1. Choose your oil",
+                        icon: ShoppingBag,
                         color: "text-orange-600",
                         bg: "bg-orange-50"
                     },
                     {
-                        title: "Traditional Tadka",
-                        desc: "Unlock the authentic aroma of sambar and chutneys with a single splash.",
-                        icon: Utensils,
-                        color: "text-yellow-600",
-                        bg: "bg-yellow-50"
+                        title: "2. Order on WhatsApp",
+                        icon: MessageCircle,
+                        color: "text-emerald-600",
+                        bg: "bg-emerald-50"
                     },
                     {
-                        title: "Deep Frying",
-                        desc: "Naturally high smoke point ensures stable frying without breaking down.",
-                        icon: Droplets,
+                        title: "3. Confirm & pay",
+                        icon: CreditCard,
                         color: "text-blue-600",
                         bg: "bg-blue-50"
+                    },
+                    {
+                        title: "4. Delivered to your home",
+                        icon: Truck,
+                        color: "text-purple-600",
+                        bg: "bg-purple-50"
                     }
                 ].map((item, i) => (
-                    <div key={i} className="group flex flex-col items-start p-10 bg-white rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-                        <div className={`h-16 w-16 mb-10 rounded-2xl ${item.bg} flex items-center justify-center group-hover:scale-110 transition-transform duration-500`}>
+                    <div key={i} className="group flex flex-col items-center text-center p-8 bg-white rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+                        <div className={`h-16 w-16 mb-6 rounded-2xl ${item.bg} flex items-center justify-center group-hover:scale-110 transition-transform duration-500`}>
                             <item.icon className={`h-8 w-8 ${item.color}`} strokeWidth={1.5} />
                         </div>
-
-                        <h3 className="text-2xl font-semibold text-gray-900 mb-3 tracking-tight">{item.title}</h3>
-                        <p className="text-lg text-gray-500 leading-relaxed font-medium">{item.desc}</p>
-
-                        <div className="mt-auto pt-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                            <span className="text-sm font-bold tracking-widest uppercase text-gray-400">Best For</span>
-                        </div>
+                        <h3 className="text-xl font-semibold text-gray-900 tracking-tight">{item.title}</h3>
                     </div>
                 ))}
             </div>
@@ -452,7 +453,7 @@ const HomePage = ({ onAddToCart }) => {
             <SafetySection />
             <Testimonials />
             <ProductShowcase onAddToCart={onAddToCart} />
-            <UsageInspiration />
+            <OrderingSteps />
             <FAQSection />
             <FinalCTA />
         </>
