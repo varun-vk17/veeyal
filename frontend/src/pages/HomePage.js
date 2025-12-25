@@ -93,18 +93,15 @@ const Hero = () => (
                         MADE THE TRADITIONAL WAY • NO HEAT • NO CHEMICALS
                     </span>
                     <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-foreground mb-8 text-balance">
-                        Your grandparents didn’t cook <br className="hidden md:block" /> with refined oil.
+                        Pure cold-pressed oils for families who care about health
                     </h1>
                     <p className="mt-4 text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-balance">
-                        Veeyal makes traditionally wood-pressed oils without heat or chemicals — so your everyday cooking doesn’t strip away nutrition.
+                        Traditionally made oils with no refining, no chemicals, and no shortcuts — safe for everyday cooking.
                     </p>
                     <div className="flex flex-col items-center gap-6">
                         <div className="flex flex-col sm:flex-row justify-center gap-4 w-full px-4 sm:px-0">
                             <Button size="lg" className="rounded-full px-8 h-12 text-base bg-emerald-700 hover:bg-emerald-800 text-white shadow-lg hover:shadow-emerald-900/20 w-full sm:w-auto" onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}>
-                                Switch to Traditional Oil
-                            </Button>
-                            <Button variant="outline" size="lg" className="rounded-full px-8 h-12 text-base border-gray-200 w-full sm:w-auto" onClick={() => document.getElementById('process').scrollIntoView({ behavior: 'smooth' })}>
-                                See How It’s Made
+                                Order on WhatsApp →
                             </Button>
                         </div>
                         <p className="text-sm text-muted-foreground font-medium opacity-80">
