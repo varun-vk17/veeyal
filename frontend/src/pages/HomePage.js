@@ -243,7 +243,7 @@ const ProductCard = ({ product, onAddToCart, index = 0 }) => (
             />
             <div className="absolute inset-x-6 bottom-6 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
                 <Button className="w-full rounded-full bg-emerald-700 backdrop-blur-md text-white hover:bg-emerald-800 h-12 shadow-lg hover:shadow-emerald-900/20 font-medium" onClick={() => onAddToCart(product)}>
-                    Add to Bag - ₹{product.price}
+                    Order on WhatsApp →
                 </Button>
             </div>
         </div>
@@ -438,7 +438,7 @@ const FinalCTA = () => (
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">Ready to stop cooking with refined oil?</h2>
             <p className="text-gray-300 mb-10 max-w-xl mx-auto text-xl md:text-2xl font-medium">Switch to oils that nourish your food — <br className="hidden md:block" /> not strip it.</p>
             <Button size="lg" className="rounded-full bg-white text-black hover:bg-gray-100 px-10 h-14 text-lg" onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}>
-                Switch from Refined Oil
+                Order on WhatsApp →
             </Button>
         </div>
     </section>
