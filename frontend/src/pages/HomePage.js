@@ -111,7 +111,7 @@ const Hero = () => (
                         MADE THE TRADITIONAL WAY • NO HEAT • NO CHEMICALS
                     </span>
                     <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-foreground mb-8 text-balance">
-                        Pure cold-pressed oils for families who want to avoid refined oil chemicals
+                        Pure cold-pressed oils for families who care about health
                     </h1>
                     <p className="mt-4 text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-balance">
                         Traditionally made oils with no refining, no chemicals, and no shortcuts — Heat-stable for deep frying & daily cooking.
