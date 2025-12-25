@@ -71,10 +71,18 @@ const REVIEWS = [
 ];
 
 const FAQS = [
-    { q: "Is your oil truly cold-pressed?", a: "Yes, we use traditional wood-press methods (Chekka Ganuga) that keep the temperature below 45°C. This preserves all the natural nutrients and aroma." },
-    { q: "What is the difference between refined and cold-pressed?", a: "Refined oils are treated with chemicals and high heat, promoting shelf life but destroying nutrients. Our cold-pressed oils are raw, unrefined, and chemical-free." },
-    { q: "What is the shelf life?", a: "Since we use no preservatives, our oils are best used within 6-9 months. Store in a cool, dry place away from direct sunlight." },
-    { q: "Is it suitable for daily indian cooking?", a: "Absolutely. Our Groundnut and Coconut oils have high smoke points suitable for deep frying and tadkas. Sesame oil is great for flavoring." },
+    {
+        q: "Is this really cold-pressed?",
+        a: "Yes. We use traditional wooden chekkus (ghani) that press seeds slowly without heat. This preserves the natural nutrients and authentic aroma that refined oils strip away."
+    },
+    {
+        q: "Why does it cost more than refined oil?",
+        a: "Refined oils are cheap because they are mass-produced using chemicals and low-quality seeds. We use 3kg of premium raw seeds to make just 1 litre of pure oil. You are paying for 100% natural oil, not fillers."
+    },
+    {
+        q: "Is it safe for daily cooking?",
+        a: "Absolutely. Veeyal oils are natural, stable at high heat, and chemical-free. They are perfect for everything from deep frying to tempering (tadka) and daily curries."
+    }
 ];
 
 const PROCESS_STEPS = [
