@@ -71,9 +71,9 @@ const PRODUCTS = [
 ];
 
 const REVIEWS = [
-    { id: 1, name: "Priya S.", location: "Bangalore", text: "We used refined sunflower oil for years but were worried about chemicals. I was skeptical if cold-pressed would smell too strong, but it’s perfect. Food tastes lighter and we feel healthier.", rating: 5, headline: "We feel healthier." },
-    { id: 2, name: "Rajesh K.", location: "Chennai", text: "My doctor suggested quitting refined oil. I thought traditional oils would be too heavy or expensive. Veeyal is worth every rupee—blends perfectly with our curries.", rating: 5, headline: "Worth every rupee." },
-    { id: 3, name: "Sneha M.", location: "Hyderabad", text: "I wanted to stop using packet oils but didn't know where to start. I was afraid of the strong aroma. This oil is so fresh and light, I’ll never go back.", rating: 5, headline: "I’ll never go back." },
+    { id: 1, name: "Priya S.", location: "Bangalore • Verified Buyer", text: "We used refined sunflower oil for years but were worried about chemicals. I was skeptical if cold-pressed would smell too strong, but it’s perfect. Food tastes lighter and we feel healthier.", rating: 5, headline: "We feel healthier." },
+    { id: 2, name: "Rajesh K.", location: "Chennai • Verified Buyer", text: "My doctor suggested quitting refined oil. I thought traditional oils would be too heavy or expensive. Veeyal is worth every rupee—blends perfectly with our curries.", rating: 5, headline: "Worth every rupee." },
+    { id: 3, name: "Sneha M.", location: "Hyderabad • Verified Buyer", text: "I wanted to stop using packet oils but didn't know where to start. I was afraid of the strong aroma. This oil is so fresh and light, I’ll never go back.", rating: 5, headline: "I’ll never go back." },
 ];
 
 const FAQS = [

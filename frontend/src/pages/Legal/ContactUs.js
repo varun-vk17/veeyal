@@ -38,9 +38,9 @@ const ContactUs = () => {
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">Visit Us</h3>
                         <p className="text-gray-500">
-                            123, Green Farm Road,<br />
-                            Coimbatore, Tamil Nadu,<br />
-                            India - 641001
+                            Veeyal Farms, 42/A<br />
+                            Pollachi Main Road, Coimbatore,<br />
+                            Tamil Nadu - 642001
                         </p>
                     </div>
 

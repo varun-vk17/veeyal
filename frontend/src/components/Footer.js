@@ -10,7 +10,8 @@ const Footer = () => (
                         <img src="/ENGLOGO.svg" alt="Veeyal" className="h-8 w-auto mb-6" />
                     </Link>
                     <p className="text-muted-foreground max-w-sm leading-relaxed">
-                        Bringing the purity of traditional extraction back to your modern kitchen. Certified organic, ethically sourced from Indian farmers.
+                        <b>From our family farm to your kitchen.</b><br />
+                        We started Veeyal to bring back the authentic taste of real wood-pressed oil in Pollachi. No middlemen, no chemicals—just pure, honest oil.
                     </p>
                 </div>
                 <div>
