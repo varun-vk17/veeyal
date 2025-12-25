@@ -52,14 +52,39 @@ export default function App() {
     e.preventDefault();
     setIsCheckingOut(true);
 
-    // SIMPLE CHECKOUT FLOW (No Payment, No WhatsApp)
     try {
-      // Simulate a short delay for "processing"
+      // 1. Construct the WhatsApp Message
+      const name = e.target.name.value;
+      const phone = e.target.phone.value;
+      const address = e.target.address.value;
+
+      const itemsList = cart.map(i => `${i.name} x${i.quantity}`).join('\n');
+      const totalAmount = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+
+      const message = `*📦 NEW WEBSITE ORDER*
+---------------------
+*Name:* ${name}
+*Phone:* ${phone}
+*Address:* ${address}
+
+*Order Details:*
+${itemsList}
+
+*Total Amount:* ₹${totalAmount}
+---------------------
+*Action:* Please share payment link.`;
+
+      // 2. Open WhatsApp
+      const encodedMsg = encodeURIComponent(message);
+      window.open(`https://wa.me/918610871405?text=${encodedMsg}`, '_blank');
+
+      // 3. Success state
+      toast.success("Redirecting to WhatsApp...");
       await new Promise(resolve => setTimeout(resolve, 1000));
 
-      toast.success("Purchase Successful! Thank you for your order.");
-      setCart([]);
-      setCartOpen(false);
+      // Optional: Clear cart or keep it? Keeping it in case they come back.
+      // setCart([]); 
+      // setCartOpen(false);
 
     } catch (error) {
       console.error("Checkout Error:", error);

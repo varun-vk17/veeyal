@@ -118,7 +118,7 @@ const Hero = () => (
                     </p>
                     <div className="flex flex-col items-center gap-6">
                         <div className="flex flex-col sm:flex-row justify-center gap-4 w-full px-4 sm:px-0">
-                            <Button size="lg" className="rounded-full px-8 h-12 text-base bg-emerald-700 hover:bg-emerald-800 text-white shadow-lg hover:shadow-emerald-900/20 w-full sm:w-auto" onClick={() => openWhatsApp("Hi Veeyal, I'm interested in ordering your cold-pressed oils. Can you help me?")}>
+                            <Button size="lg" className="rounded-full px-8 h-12 text-base bg-emerald-700 hover:bg-emerald-800 text-white shadow-lg hover:shadow-emerald-900/20 w-full sm:w-auto" onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}>
                                 Order on WhatsApp →
                             </Button>
                         </div>
@@ -248,8 +248,8 @@ const ProductCard = ({ product, onAddToCart, index = 0 }) => (
                 className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-x-6 bottom-6 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                <Button className="w-full rounded-full bg-emerald-700 backdrop-blur-md text-white hover:bg-emerald-800 h-12 shadow-lg hover:shadow-emerald-900/20 font-medium" onClick={() => openWhatsApp(`Hi Veeyal, I'd like to order *${product.name}*. Please send me the payment link.`)}>
-                    Order on WhatsApp →
+                <Button className="w-full rounded-full bg-emerald-700 backdrop-blur-md text-white hover:bg-emerald-800 h-12 shadow-lg hover:shadow-emerald-900/20 font-medium" onClick={() => onAddToCart(product)}>
+                    Add to Bag
                 </Button>
             </div>
         </div>
@@ -443,7 +443,7 @@ const FinalCTA = () => (
         <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">Ready to stop cooking with refined oil?</h2>
             <p className="text-gray-300 mb-10 max-w-xl mx-auto text-xl md:text-2xl font-medium">Switch to oils that nourish your food — <br className="hidden md:block" /> not strip it.</p>
-            <Button size="lg" className="rounded-full bg-white text-black hover:bg-gray-100 px-10 h-14 text-lg" onClick={() => openWhatsApp("Hi Veeyal, I want to switch to cold-pressed oils. Please help me place an order.")}>
+            <Button size="lg" className="rounded-full bg-white text-black hover:bg-gray-100 px-10 h-14 text-lg" onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}>
                 Order on WhatsApp →
             </Button>
         </div>

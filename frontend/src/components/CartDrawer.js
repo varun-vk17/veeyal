@@ -94,7 +94,7 @@ const CartDrawer = ({
                                         Processing...
                                     </span>
                                 ) : (
-                                    "Place Order"
+                                    "Order on WhatsApp"
                                 )}
                             </Button>
                         </form>
