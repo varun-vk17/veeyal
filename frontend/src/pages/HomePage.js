@@ -74,10 +74,10 @@ const FAQS = [
 ];
 
 const PROCESS_STEPS = [
-    { title: "Better raw ingredients", desc: "Sourced from trusted farmers to ensure clean, high-quality seeds.", image: "/step1.jpeg" },
-    { title: "Easier digestion", desc: "Slow cold-pressing preserves nutrients and natural taste.", image: "/step2.jpeg" },
-    { title: "Nothing harmful added", desc: "Naturally settled and filtered without chemicals.", image: "/step3.jpeg" },
-    { title: "Fresh for daily use", desc: "Packed in small batches to maintain purity.", image: "/step4.jpeg" }
+    { title: "Choose your oil", desc: "", image: "/step1.jpeg" },
+    { title: "Order on WhatsApp", desc: "", image: "/step2.jpeg" },
+    { title: "Confirm & pay", desc: "", image: "/step3.jpeg" },
+    { title: "Delivered to your home", desc: "", image: "/step4.jpeg" }
 ];
 
 const Hero = () => (
@@ -160,8 +160,7 @@ const ProcessSection = () => (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-32">
                 <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-100 text-xs font-bold tracking-widest uppercase mb-6 text-emerald-800">How it works</span>
-                <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-gray-900">From farm to bottle.</h2>
-                <p className="text-xl text-gray-500 font-medium max-w-2xl mx-auto">A transparent journey of purity, ensuring nothing is added and nothing is removed.</p>
+                <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-gray-900">Simple Ordering Process.</h2>
             </div>
 
             <div className="relative">
