@@ -72,19 +72,9 @@ const CartDrawer = ({
                         </div>
 
                         <form onSubmit={handleCheckout} className="space-y-4">
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="space-y-2">
-                                    <Label htmlFor="name">Name</Label>
-                                    <Input id="name" required placeholder="Priya Sharma" className="rounded-xl" />
-                                </div>
-                                <div className="space-y-2">
-                                    <Label htmlFor="phone">Phone</Label>
-                                    <Input id="phone" required placeholder="98765 43210" className="rounded-xl" />
-                                </div>
-                            </div>
                             <div className="space-y-2">
-                                <Label htmlFor="address">Shipping Address</Label>
-                                <Input id="address" required placeholder="Flat 101, Green Apts..." className="rounded-xl" />
+                                <Label htmlFor="name">Name (Optional)</Label>
+                                <Input id="name" placeholder="Your Name" className="rounded-xl" />
                             </div>
 
                             <Button type="submit" className="w-full rounded-xl h-12 text-base bg-emerald-700 hover:bg-emerald-800" disabled={isCheckingOut}>

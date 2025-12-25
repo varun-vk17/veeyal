@@ -92,9 +92,9 @@ const FAQS = [
 ];
 
 const PROCESS_STEPS = [
-    { title: "Better raw ingredients", desc: "Sourced from trusted farmers to ensure clean, high-quality seeds.", image: "/step1.jpeg" },
+    { title: "Sun-dried, Export-Quality Seeds", desc: "Sourced from trusted farmers to ensure clean, high-quality seeds.", image: "/step1.jpeg" },
     { title: "Easier digestion", desc: "Slow cold-pressing preserves nutrients and natural taste.", image: "/step2.jpeg" },
-    { title: "Nothing harmful added", desc: "Naturally settled and filtered without chemicals.", image: "/step3.jpeg" },
+    { title: "Zero Chemicals, Zero Preservatives", desc: "Naturally settled and filtered without chemicals.", image: "/step3.jpeg" },
     { title: "Fresh for daily use", desc: "Packed in small batches to maintain purity.", image: "/step4.jpeg" }
 ];
 
@@ -111,10 +111,10 @@ const Hero = () => (
                         MADE THE TRADITIONAL WAY • NO HEAT • NO CHEMICALS
                     </span>
                     <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-foreground mb-8 text-balance">
-                        Pure cold-pressed oils for families who care about health
+                        Pure cold-pressed oils for families who want to avoid refined oil chemicals
                     </h1>
                     <p className="mt-4 text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-balance">
-                        Traditionally made oils with no refining, no chemicals, and no shortcuts — safe for everyday cooking.
+                        Traditionally made oils with no refining, no chemicals, and no shortcuts — Heat-stable for deep frying & daily cooking.
                     </p>
                     <div className="flex flex-col items-center gap-6">
                         <div className="flex flex-col sm:flex-row justify-center gap-4 w-full px-4 sm:px-0">
@@ -276,7 +276,7 @@ const ProductShowcase = ({ onAddToCart }) => (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-20">
                 <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-gray-900">Our Collection.</h2>
-                <p className="text-xl text-gray-500 font-medium">Pure. Potent. Pressed for you.</p>
+                <p className="text-xl text-gray-500 font-medium">Freshly pressed batch. Limited stock.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -369,7 +369,7 @@ const SafetySection = () => (
                     </div>
                     <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-6 text-gray-900">Safety you can trust.</h2>
                     <p className="text-xl text-gray-500 font-medium mb-12 leading-relaxed">
-                        We use no heat or chemicals. Naturally filtered for purity. Safe for your daily cooking.
+                        We use no heat or chemicals. Lab-tested for heat stability and purity.
                     </p>
                     <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-12">
                         {[
@@ -394,7 +394,7 @@ const SafetySection = () => (
 const Testimonials = () => (
     <section id="reviews" className="py-24 bg-white scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-semibold text-center mb-16 text-gray-900">Families who switched never went back.</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold text-center mb-16 text-gray-900">Why 500+ families switched to Veeyal.</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {REVIEWS.map(review => (
                     <Card key={review.id} className="border-none shadow-lg bg-stone-50/50 rounded-2xl hover:scale-[1.02] transition-transform duration-500">
@@ -442,7 +442,7 @@ const FinalCTA = () => (
     <section className="py-24 bg-black text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">Ready to stop cooking with refined oil?</h2>
-            <p className="text-gray-300 mb-10 max-w-xl mx-auto text-xl md:text-2xl font-medium">Switch to oils that nourish your food — <br className="hidden md:block" /> not strip it.</p>
+            <p className="text-gray-300 mb-10 max-w-xl mx-auto text-xl md:text-2xl font-medium">Stop cooking with chemicals today.</p>
             <Button size="lg" className="rounded-full bg-white text-black hover:bg-gray-100 px-10 h-14 text-lg" onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}>
                 Order on WhatsApp →
             </Button>

@@ -54,9 +54,7 @@ export default function App() {
 
     try {
       // 1. Construct the WhatsApp Message
-      const name = e.target.name.value;
-      const phone = e.target.phone.value;
-      const address = e.target.address.value;
+      const name = e.target.name.value || "Guest";
 
       const itemsList = cart.map(i => `${i.name} x${i.quantity}`).join('\n');
       const totalAmount = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
@@ -64,15 +62,13 @@ export default function App() {
       const message = `*📦 NEW WEBSITE ORDER*
 ---------------------
 *Name:* ${name}
-*Phone:* ${phone}
-*Address:* ${address}
 
 *Order Details:*
 ${itemsList}
 
 *Total Amount:* ₹${totalAmount}
 ---------------------
-*Action:* Please share payment link.`;
+*Action:* Please share payment link & ask for delivery address.`;
 
       // 2. Open WhatsApp
       const encodedMsg = encodeURIComponent(message);
