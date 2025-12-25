@@ -133,16 +133,12 @@ const Hero = () => (
 const TransitionSection = () => (
     <section className="py-24 md:py-32 bg-white text-center">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <span className="text-xs font-bold tracking-[0.2em] text-emerald-800 uppercase mb-6 block">
-                What Changed
-            </span>
             <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-8 leading-tight">
-                Oil didn’t change. <br className="hidden md:block" />
-                The way we make it did.
+                Why refined oils don’t belong in your kitchen
             </h2>
             <p className="text-xl md:text-2xl text-gray-500 font-medium leading-relaxed max-w-3xl mx-auto mb-16">
-                For generations, oil was pressed slowly for food. <br className="hidden md:block" />
-                Today, it’s processed fast for factories.
+                Most refined oils are made using high heat and chemicals. <br className="hidden md:block" />
+                This removes natural nutrients and focuses on shelf life, not health.
             </p>
             <div className="flex justify-center mb-16">
                 <div className="h-16 w-px bg-gray-200"></div>
@@ -151,9 +147,9 @@ const TransitionSection = () => (
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 1 }}
-                className="text-lg font-semibold text-emerald-800 tracking-wide"
+                className="text-lg font-semibold text-emerald-800 tracking-wide max-w-3xl mx-auto"
             >
-                So we went back to the original way.
+                Veeyal oils are cold-pressed using traditional methods. No chemical extraction. No extreme heat. Just pure oil, the way it was meant to be.
             </motion.p>
         </div>
     </section>
